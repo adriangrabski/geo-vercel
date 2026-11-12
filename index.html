@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cztery metryki widoczności w AI: Share of Voice, pozycja, Citation Rate i Citation Links</title>
+<meta name="description" content="Co tydzień ktoś przysyła zrzut ekranu. „ChatGPT nas poleca” albo, częściej, „ChatGPT poleca konkurencję, co robić?”. Oba komunikaty mają ten sam problem.…">
+<meta name="author" content="Adrian Grabski">
+<link rel="author" href="https://adriangrabski.pl/o-mnie/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://adriangrabski.pl/#person",
+      "name": "Adrian Grabski",
+      "jobTitle": "Specjalista SEO i GEO",
+      "description": "Niezależny konsultant SEO i GEO (AI search) z Łodzi, w wyszukiwarkach od 2002 roku.",
+      "url": "https://adriangrabski.pl/",
+      "sameAs": [
+        "https://adriangrabski.pl/",
+        "https://www.wikidata.org/wiki/Q142116517"
+      ]
+    },
+    {
+      "@type": "Article",
+      "headline": "Cztery metryki widoczności w AI: Share of Voice, pozycja, Citation Rate i Citation Links",
+      "inLanguage": "pl",
+      "author": {
+        "@id": "https://adriangrabski.pl/#person"
+      },
+      "datePublished": "2026-11-12"
+    }
+  ]
+}
+</script>
+<style>
+:root {
+  --accent: #111111;
+  --accent-soft: #f0f0f0;
+  --bg: #f7f5f2;
+  --card: #ffffff;
+  --text: #1c1917;
+  --muted: #57534e;
+  --line: #e7e5e4;
+}
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+.wrap { max-width: 740px; margin: 0 auto; padding: 28px 20px 72px; }
+header.site {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 12px;
+  margin-bottom: 2rem;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+header.site a { color: var(--accent); text-decoration: none; font-weight: 600; }
+header.site a:hover { text-decoration: underline; }
+.kicker { color: var(--muted); text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.08em; }
+h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 0.6em; }
+.meta {
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 2em;
+}
+article h2 { font-size: 1.35rem; line-height: 1.3; margin-top: 1.9em; }
+article p { margin: 0 0 1em; }
+a { color: var(--accent); }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--accent-soft);
+  padding: 0.05em 0.35em;
+  border-radius: 4px;
+}
+.author {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  padding: 16px;
+  margin-top: 2.8em;
+  align-items: start;
+}
+.author img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #ddd;
+}
+.author h2 { margin: 0 0 0.35em; font-size: 1.05rem; font-family: system-ui, sans-serif; }
+.author p { margin: 0; font-size: 0.95rem; }
+footer {
+  margin-top: 2.2em;
+  padding-top: 1em;
+  border-top: 1px solid var(--line);
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+footer a { color: var(--accent); }
+@media (max-width: 640px) {
+  html { font-size: 17px; }
+  h1 { font-size: 1.55rem; }
+  .author { grid-template-columns: 1fr; }
+  header.site { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+  <span class="kicker">Notatki SEO i GEO</span>
+  <a href="https://adriangrabski.pl/">adriangrabski.pl</a>
+</header>
+<article>
+<h1>Cztery metryki widoczności w AI: Share of Voice, pozycja, Citation Rate i Citation Links</h1>
+<p class="meta">Adrian Grabski · 12 listopada 2026 · Łódź</p>
+<p>Co tydzień ktoś przysyła zrzut ekranu. „ChatGPT nas poleca” albo, częściej, „ChatGPT poleca konkurencję, co robić?”. Oba komunikaty mają ten sam problem. Pojedyncza odpowiedź modelu językowego to anegdota, nie dane. Tak tę zasadę formułuje Adrian Grabski, <a href="https://adriangrabski.pl/freelancer-seo/">specjalista SEO</a> i GEO z Łodzi, i od niej zaczyna każdą rozmowę o pomiarze.</p>
+<h2>Dlaczego jeden test nic nie mówi</h2>
+<p>Odpowiedzi modeli zmieniają się między sesjami i między dniami. Według SparkToro szansa, że dostaniesz tę samą listę marek dwa razy z rzędu, jest mniejsza niż 1 do 100. W szerszym badaniu tej samej ekipy, na 2961 promptach, 600 wolontariuszach i 12 kategoriach, identyczna lista w identycznej kolejności pojawiała się mniej więcej raz na tysiąc. Google AI Overviews zmienia treść w około 70 procentach przypadków.</p>
+<p>Nie istnieje „Search Console dla ChatGPT”. McKinsey pytał około 30 dyrektorów marketingu i tylko 16 procent deklarowało systematyczny pomiar widoczności w AI. Reszta opiera się na wrażeniu. Wrażenie jest złym narzędziem do decyzji budżetowych.</p>
+<h2>Cztery liczby, które da się powtórzyć</h2>
+<p>Adrian Grabski w audycie GEO i w przewodniku pomiaru posługuje się czterema metrykami.</p>
+<p>Share of Voice to odsetek odpowiedzi, w których marka w ogóle się pojawia, nawet bez linku. Średnia pozycja mówi, która z kolei na liście jest Twoja marka, gdy model wymienia kilka firm. Citation Rate to odsetek odpowiedzi z aktywnym linkiem do Twojej strony. Citation Links to liczba unikalnych adresów URL z Twojej domeny, które model faktycznie cytuje.</p>
+<p>Ta ostatnia metryka jest najbardziej diagnostyczna. Jeśli wynosi jeden albo dwa, AI zna zwykle tylko stronę główną. Marka „istnieje” w odpowiedzi, ale nie ma głębokości: brakuje poradników, stron ofertowych i materiałów, które dałoby się podać jako źródło.</p>
+<p>Do tego dochodzi wskaźnik błędów: czy model mówi o firmie prawdę, mówi częściowo, przeczy faktom, czy nie ma żadnego dowodu. Błędy warto oceniać w tej czterostopniowej skali, a nie hasłem „halucynuje”.</p>
+<h2>Protokół, bez którego liczby kłamią</h2>
+<p>Minimum to pięć powtórzeń na szybki test i 10–20 powtórzeń, gdy na podstawie wyniku ma paść decyzja. Sesje i dni trzeba rozdzielać, bo jedna seria w tym samym oknie czatu zawyża spójność. Wynik podaje się z przedziałem ufności, a nie jako pojedynczy procent.</p>
+<p>Minimalny zestaw wygląda tak: 20–50 pełnych pytań, które naprawdę zadają klienci, nie haseł z narzędzia do słów kluczowych; baseline z zapisem promptu, platformy, odpowiedzi, źródeł i daty; jedna zmiana naraz; retest tym samym protokołem. Platformy, które warto objąć razem, to ChatGPT, Google AI Overviews, Perplexity i Gemini. Inaczej optymalizuje się pod jeden model i dziwi później, że pozostałe milczą.</p>
+<p>Próg-heurystyka, nie prawo fizyki: Citation Rate poniżej 5–10 procent po 90 dniach zwykle oznacza, że treść na własnej stronie już nie wystarczy i trzeba budować autorytet poza nią, przede wszystkim przez digital PR. Lag między publikacją a cytowaniem w ChatGPT to typowo 6–12 tygodni. To obserwacja z projektów, nie oficjalny termin platformy.</p>
+<h2>Czego te metryki nie zastąpią</h2>
+<p>Pomiar nie naprawi strony, której crawler nie widzi, i nie zastąpi <a href="https://adriangrabski.pl/audyt-seo/">audyt SEO</a> w warstwie technicznej. Najpierw dostępność, potem treść, którą da się zacytować, potem liczby. Jeśli zmienisz pięć rzeczy naraz i po miesiącu Share of Voice drgnie, nie wiesz, co zadziałało.</p>
+<p>Obrona przed uporczywymi błędami modelu to osobna strona „źródła prawdy”: zwarte fakty, daty i spójne dane o firmie, które da się sprawdzić. Bez takiego zapisu trudno ocenić, czy AI zmyśla, czy powtarza nieaktualną informację, którą sami zostawiliście w sieci.</p>
+<p>Szczegółowy opis metryk i protokołu jest w tekście <a href="https://adriangrabski.pl/geo/jak-mierzyc-widocznosc-w-ai/">Jak mierzyć widoczność w AI</a> na <a href="https://adriangrabski.pl/">adriangrabski.pl</a>.</p>
+</article>
+<aside class="author">
+  <img src="avatar.jpg" width="96" height="96" alt="Adrian Grabski – specjalista SEO i GEO, Łódź">
+  <div>
+    <h2>Adrian Grabski</h2>
+    <p>Niezależny konsultant SEO i GEO z Łodzi, w wyszukiwarkach od 2002 roku. Prowadzi audyty, konsultacje i szkolenia, a od 2024 roku każda jego usługa obejmuje też widoczność w ChatGPT, Gemini, Perplexity i Google AI Overviews. Twórca darmowej społeczności Search AI Academy i kanału YouTube @czasai. Więcej na <a href="https://adriangrabski.pl/">adriangrabski.pl</a>.</p>
+  </div>
+</aside>
+<footer>
+  <p>© 2026 Adrian Grabski · <a href="https://adriangrabski.pl/freelancer-seo/">specjalista SEO</a> · <a href="https://adriangrabski.pl/audyt-seo/">audyt SEO</a> · <a href="https://adriangrabski.pl/geo/">przewodnik GEO</a></p>
+</footer>
+</div>
+</body>
+</html>
